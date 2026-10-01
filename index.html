@@ -1,0 +1,121 @@
+<!DOCTYPE html> 
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f5f3e9">
+    <title>Guarani Mbya | Cultura, território e futuro</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="cabecalho-site">
+      <a class="marca-nome" href="#inicio">Guarani Mbya</a>
+      <nav aria-label="Navegação principal">
+        <a href="#cultura">Cultura</a>
+        <a href="#territorio">Território</a>
+        <a href="#direitos">Direitos</a>
+        <a href="#quiz">Quiz</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="abertura" id="inicio">
+        <p class="eyebrow">Povo, território e continuidade</p>
+        <h1>Guarani <span>Mbya</span></h1>
+        <div class="abertura-resumo">
+          <p>Conheça aspectos da cultura, da relação com a terra e das lutas atuais do povo Guarani Mbya.</p>
+          <a class="link-destaque" href="#cultura">Explorar a página <span aria-hidden="true">↓</span></a>
+        </div>
+      </section>
+
+      <section class="temas" aria-label="Temas sobre os Guarani Mbya">
+        <article class="tema" id="cultura">
+          <p class="tema-numero">01 / CULTURA</p>
+          <figure class="espaco-imagem">
+            <img src="imagens/guarani.jpeg" alt="Registro visual relacionado à cultura Guarani Mbya" fetchpriority="high">
+          </figure>
+          <div class="tema-conteudo">
+            <h2>Um modo de ser que se transmite</h2>
+            <p>Nhandereko é uma expressão associada ao modo de vida Guarani. A língua, a espiritualidade e os saberes compartilhados entre gerações fazem parte da continuidade cultural.</p>
+            <div class="conteudo-extra" id="mais-cultura" hidden>
+              <p>A transmissão oral mantém conhecimentos vivos no cotidiano. A comunidade e as relações entre gerações têm papel importante nesse processo.</p>
+            </div>
+            <button class="botao-mais" type="button" aria-expanded="false" aria-controls="mais-cultura">Ver mais <span aria-hidden="true">+</span></button>
+          </div>
+        </article>
+
+        <article class="tema" id="territorio">
+          <p class="tema-numero">02 / TERRITÓRIO</p>
+          <figure class="espaco-imagem">
+            <img src="imagens/guarani_mbya_2.jpg" alt="Registro visual relacionado ao território Guarani Mbya" loading="lazy">
+          </figure>
+          <div class="tema-conteudo">
+            <h2>Terra é lugar de viver</h2>
+            <p>O território sustenta a vida comunitária, a língua, as práticas culturais e a relação com a natureza. Tekoa pode se referir ao lugar onde se vive conforme o modo de ser Guarani.</p>
+            <div class="conteudo-extra" id="mais-territorio" hidden>
+              <p>A defesa dos territórios tradicionais também está ligada à proteção das matas, das águas e das condições para que as comunidades mantenham seu modo de vida.</p>
+            </div>
+            <button class="botao-mais" type="button" aria-expanded="false" aria-controls="mais-territorio">Ver mais <span aria-hidden="true">+</span></button>
+          </div>
+        </article>
+
+        <article class="tema" id="direitos">
+          <p class="tema-numero">03 / DIREITOS</p>
+          <figure class="espaco-imagem">
+            <img src="imagens/guarani_mbya_4.jpg" alt="Registro visual relacionado aos direitos do povo Guarani Mbya" loading="lazy">
+          </figure>
+          <div class="tema-conteudo">
+            <h2>Direitos e reconhecimento</h2>
+            <p>A Constituição Federal de 1988 reconhece, nos artigos 231 e 232, direitos dos povos indígenas, incluindo sua organização social, costumes, línguas, crenças e tradições.</p>
+            <div class="conteudo-extra" id="mais-direitos" hidden>
+              <p>A garantia desses direitos envolve também a proteção das terras tradicionalmente ocupadas e o respeito às formas próprias de organização de cada povo.</p>
+            </div>
+            <button class="botao-mais" type="button" aria-expanded="false" aria-controls="mais-direitos">Ver mais <span aria-hidden="true">+</span></button>
+          </div>
+        </article>
+
+        <article class="tema" id="futuro">
+          <p class="tema-numero">04 / FUTURO</p>
+          <figure class="espaco-imagem">
+            <img src="imagens/myaba.jpeg" alt="Registro visual relacionado aos saberes Guarani Mbya" loading="lazy">
+          </figure>
+          <div class="tema-conteudo">
+            <h2>Cuidar da terra, cuidar da vida</h2>
+            <p>Os conhecimentos sobre cultivo, sementes, mata e ciclos naturais contribuem para a vida comunitária e para a continuidade dos saberes Guarani Mbya.</p>
+            <div class="conteudo-extra" id="mais-futuro" hidden>
+              <p>O milho avaxi é associado à alimentação e a práticas culturais Guarani. A preservação de sementes tradicionais ajuda a manter conhecimentos e vínculos entre gerações.</p>
+            </div>
+            <button class="botao-mais" type="button" aria-expanded="false" aria-controls="mais-futuro">Ver mais <span aria-hidden="true">+</span></button>
+          </div>
+        </article>
+      </section>
+
+      <section class="secao-quiz" id="quiz" aria-labelledby="titulo-quiz">
+        <div class="introducao-quiz">
+          <p class="eyebrow">Hora de testar o que aprendeu</p>
+          <h2 id="titulo-quiz">Quiz Guarani Mbya</h2>
+          <p>São cinco perguntas de múltipla escolha. No final, você verá quantas acertou.</p>
+          <button class="botao-iniciar" id="iniciar-quiz" type="button">Começar quiz <span aria-hidden="true">→</span></button>
+        </div>
+        <div class="painel-quiz" id="painel-quiz" hidden>
+          <p class="progresso-quiz" id="progresso-quiz" aria-live="polite"></p>
+          <h3 id="texto-pergunta"></h3>
+          <div class="alternativas" id="alternativas"></div>
+          <p class="retorno-resposta" id="retorno-resposta" aria-live="polite"></p>
+          <button class="botao-proxima" id="proxima-pergunta" type="button" hidden>Próxima pergunta <span aria-hidden="true">→</span></button>
+          <div class="resultado-quiz" id="resultado-quiz" aria-live="polite" hidden>
+            <p class="eyebrow">Resultado</p>
+            <h3 id="texto-resultado"></h3>
+            <button class="botao-iniciar" id="refazer-quiz" type="button">Fazer novamente <span aria-hidden="true">↻</span></button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="rodape-site">
+      <a class="marca-nome" href="#inicio">Guarani Mbya</a>
+      <p>Respeito aos povos indígenas começa com escuta e conhecimento.</p>
+    </footer>
+  </body>
+</html>
